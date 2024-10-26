@@ -2,8 +2,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'dashboard.dart'; // Impor file dashboard.dart
 
-//tes commit
-
 void main() {
   runApp(const MainApp());
 }
@@ -38,7 +36,7 @@ class _LoginPageState extends State<LoginPage> {
     String password = passwordController.text;
 
     // Validasi username dan password
-    if (username == 'admin' && password == 'admin') {
+    if (username == 'siimam' && password == 'admin') {
       Navigator.push(
         context,
         MaterialPageRoute(

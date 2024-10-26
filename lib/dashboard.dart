@@ -1,4 +1,3 @@
-// dashboard.dart
 import 'package:flutter/material.dart';
 
 class Dashboard extends StatelessWidget {
@@ -10,12 +9,23 @@ class Dashboard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        automaticallyImplyLeading: false,
         title: const Text('Dashboard'),
       ),
       body: Center(
-        child: Text(
-          'Welcome, $username!', // Menampilkan username
-          style: const TextStyle(fontSize: 24),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text(
+              'Welcome, $username!', // Menampilkan username
+              style: const TextStyle(fontSize: 24),
+            ),
+            const SizedBox(height: 16), // Jarak antara teks pertama dan kedua
+            const Text(
+              'NIM : 22552011128', // Teks tambahan yang Anda inginkan
+              style: TextStyle(fontSize: 18),
+            ),
+          ],
         ),
       ),
     );
